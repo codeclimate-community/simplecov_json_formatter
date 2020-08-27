@@ -1,4 +1,6 @@
 AllCops:
+  Exclude:
+    - 'spec/fixtures/**/*'
   TargetRubyVersion: 2.4
 
 Style/Documentation:
