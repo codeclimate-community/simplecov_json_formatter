@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 module SimpleCovJSONFormatter
   class ResultExporter
-    FILENAME='coverage.json'
+    FILENAME = 'coverage.json'
 
     def initialize(result_hash)
       @result = result_hash

@@ -1,4 +1,6 @@
-require 'simplecov-json-formatter/source_file_formatter'
+# frozen_string_literal: true
+
+require 'simplecov_json_formatter/source_file_formatter'
 
 module SimpleCovJSONFormatter
   class ResultHashFormatter
