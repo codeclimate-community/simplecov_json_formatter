@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
-require 'byebug'
 
 describe SimpleCov::Formatter::JSONFormatter do
   let(:result) do
@@ -11,9 +10,22 @@ describe SimpleCov::Formatter::JSONFormatter do
   end
 
   describe 'format' do
-    it 'works' do
-      subject.format(result)
-      expect(json_ouput).to eq(json_result('sample'))
+    context 'whit line coverage' do
+      it 'works' do
+        subject.format(result)
+        expect(json_ouput).to eq(json_result('sample'))
+      end
+    end
+
+    context 'whit branch coverage' do
+      before do
+        enable_branch_coverage
+      end
+
+      it 'works' do
+        subject.format(result)
+        expect(json_ouput).to eq(json_result('sample_with_branch'))
+      end
     end
   end
 end

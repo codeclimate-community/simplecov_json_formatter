@@ -7,13 +7,26 @@ module SimpleCovJSONFormatter
     end
 
     def format
-      {
-        lines: lines,
-        branches: branches
-      }
+      if SimpleCov.branch_coverage?
+        line_coverage.merge(branch_coverage)
+      else
+        line_coverage
+      end
     end
 
     private
+
+    def line_coverage
+      @line_coverage || {
+        lines: lines
+      }
+    end
+
+    def branch_coverage
+      {
+        branches: branches
+      }
+    end
 
     def lines
       lines = []

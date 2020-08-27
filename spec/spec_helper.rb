@@ -6,6 +6,10 @@ require 'simplecov_json_formatter'
 
 SimpleCov.coverage_dir('tmp/coverage')
 
+def enable_branch_coverage
+  allow(SimpleCov).to receive(:branch_coverage?).and_return(true)
+end
+
 def source_fixture(filename)
   File.expand_path(File.join(File.dirname(__FILE__), 'fixtures', filename))
 end
