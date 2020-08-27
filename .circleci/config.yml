@@ -1,0 +1,14 @@
+version: 2.0
+
+jobs:
+  build:
+    machine: true
+    working_directory: ~/simplecov-json-formatter
+    steps:
+      - checkout
+      - run:
+          name: Build
+          command: make image
+      - run:
+          name: Test
+          command: make test

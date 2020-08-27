@@ -3,4 +3,4 @@
 exec docker run \
 	-it --rm \
 	--volume "$PWD:/gem" \
-	codeclimate/simplecov-json-formatter "$@"
+	simplecov-json-formatter "$@"

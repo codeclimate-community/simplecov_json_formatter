@@ -1,7 +1,7 @@
 .PHONY: image test sh
 
 image: 
-	docker image build -t codeclimate/simplecov-json-formatter .
+	docker image build -t simplecov-json-formatter .
 
 test:
 	./bin/run-image rake
