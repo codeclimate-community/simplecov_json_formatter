@@ -9,10 +9,19 @@
         1,
         1,
         1,
+        1,
         null,
         null,
         1,
         1,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        1,
+        null,
         null,
         null,
         "ignored",
@@ -23,7 +32,18 @@
         null
       ],
       "branches": [
-
+        {
+          "type": "then",
+          "start_line": 14,
+          "end_line": 14,
+          "coverage": 0
+        },
+        {
+          "type": "else",
+          "start_line": 16,
+          "end_line": 16,
+          "coverage": 1
+        }
       ]
     }
   }

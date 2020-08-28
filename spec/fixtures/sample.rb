@@ -1,11 +1,20 @@
 # Foo class
 class Foo
   def initialize
-    @foo = "baz"
+    @foo = 'bar'
+    @bar = 'foo'
   end
 
   def bar
     @foo
+  end
+
+  def foo(param)
+    if param
+      @bar
+    else
+      @foo
+    end
   end
 
   #:nocov:
