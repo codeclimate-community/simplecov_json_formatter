@@ -8,7 +8,7 @@ Generates a formatted JSON report of your [SimpleCov](https://github.com/simplec
 
 You can expect for this gem to produce a `coverage.json` file, located at the `coverage` folder. 
 
-Depending on your `SimpleCoV`'s settings you will experiment different outcomes. Particularly depending on which type of coverage are you running `SimpleCov` wit:
+Depending on your `SimpleCoV`'s settings you will experiment different outcomes. Particularly depending on which type of coverage are you running `SimpleCov` with:
 
 - If you configure `SimpleCov` to run with `branch` coverage you should expect an output formatted like [sample_with_branch.json](https://github.com/fede-moya/simplecov_json_formatter/blob/master/spec/fixtures/sample_with_branch.json)
 - Otherwise you should expect an output formatted like [sample.json](https://github.com/fede-moya/simplecov_json_formatter/blob/master/spec/fixtures/sample.json)
