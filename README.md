@@ -17,7 +17,7 @@ Depending on your `SimpleCoV`'s settings you will experiment different outcomes.
 
 We encourage you to use docker for common operations like running tests, or debugging your code. Running `make sh` will run a new container instance based on the `Dockerfile` provided at root, finally a shell prompt will be displayed on your terminal. Also, syncronization with your local files will be already set. 
 ### Tests
-`make test` will trigger the excution of both running tests and running rubocop as linter a check, by simply running `rake`, this actions will be run inside a new container but using your local files.
+`make test` will trigger the excution of both running tests and running rubocop as linter, by simply running `rake`, this actions will be run inside a new container but using your local files.
 
 ### Format
 
