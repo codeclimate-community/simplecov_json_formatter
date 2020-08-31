@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'simplecov'
 require 'simplecov_json_formatter/result_hash_formatter'
 require 'simplecov_json_formatter/result_exporter'
 require 'json'

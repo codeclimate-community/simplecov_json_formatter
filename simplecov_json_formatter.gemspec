@@ -18,7 +18,4 @@ Gem::Specification.new 'simplecov_json_formatter' do |s|
   s.require_paths = ['lib']
 
   s.required_ruby_version = '>= 2.4.0'
-
-  s.add_dependency 'json'
-  s.add_dependency 'simplecov', '~> 0.18', '>= 0.18.0'
 end
