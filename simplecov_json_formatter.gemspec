@@ -11,6 +11,7 @@ Gem::Specification.new 'simplecov_json_formatter' do |s|
   s.homepage    = 'https://github.com/fede-moya/simplecov_json_formatter'
   s.summary     = %(JSON formatter for SimpleCov)
   s.description = s.summary
+  s.license = 'MIT'
 
   s.files         = Dir['{lib}/**/*.*', '*.md']
   s.test_files    = Dir['{test}/**/*.*']
