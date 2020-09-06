@@ -25,4 +25,4 @@ We encourage you to use docker for common operations like running tests, or debu
 
 ## Copyright
 
-See License ?
+See [License](https://github.com/codeclimate-community/simplecov_json_formatter/blob/master/LICENSE)
