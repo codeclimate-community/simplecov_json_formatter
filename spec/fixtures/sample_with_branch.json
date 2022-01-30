@@ -1,6 +1,6 @@
 {
   "meta": {
-    "simplecov_version": "0.18.5"
+    "simplecov_version": "0.21.2"
   },
   "coverage": {
     "/stub_working_directory/spec/fixtures/sample.rb": {
