@@ -14,14 +14,14 @@ describe SimpleCov::Formatter::JSONFormatter do
   end
 
   describe 'format' do
-    context 'whit line coverage' do
+    context 'with line coverage' do
       it 'works' do
         subject.format(result)
         expect(json_ouput).to eq(json_result('sample'))
       end
     end
 
-    context 'whit branch coverage' do
+    context 'with branch coverage' do
       let(:original_lines) do
         [nil, 1, 1, 1, 1, nil, nil, 1, 1,
          nil, nil, 1, 1, 0, nil, 1, nil,
