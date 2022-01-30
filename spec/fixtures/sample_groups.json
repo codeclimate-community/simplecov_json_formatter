@@ -35,7 +35,9 @@
   },
   "groups": {
     "My Group": {
-      "covered_percent": 80.0
+      "lines": {
+        "covered_percent": 80.0
+      }
     }
   }
 }

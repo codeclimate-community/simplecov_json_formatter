@@ -26,7 +26,11 @@ module SimpleCovJSONFormatter
 
     def format_groups
       @result.groups.each do |name, file_list|
-        formatted_result[:groups][name] = {covered_percent: file_list.covered_percent}
+        formatted_result[:groups][name] = {
+          lines: {
+            covered_percent: file_list.covered_percent
+          }
+        }
       end
     end
 
