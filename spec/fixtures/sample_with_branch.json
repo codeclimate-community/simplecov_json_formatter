@@ -3,7 +3,7 @@
     "simplecov_version": "0.18.5"
   },
   "coverage": {
-    "/gem/spec/fixtures/sample.rb": {
+    "/stub_working_directory/spec/fixtures/sample.rb": {
       "lines": [
         null,
         1,
