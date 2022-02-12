@@ -24,7 +24,7 @@ def json_result(filename)
   JSON.parse(file)
 end
 
-DEFAULT_WORKING_DIRECTORY = 'stub_working_directory'
+DEFAULT_WORKING_DIRECTORY = 'STUB_WORKING_DIRECTORY'
 def use_current_working_directory(file)
   current_working_directory = File.expand_path('..', File.dirname(__FILE__))
   file.gsub!("/#{DEFAULT_WORKING_DIRECTORY}/", "#{current_working_directory}/")
