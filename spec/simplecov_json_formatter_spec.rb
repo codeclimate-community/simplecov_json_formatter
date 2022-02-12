@@ -59,15 +59,15 @@ describe SimpleCov::Formatter::JSONFormatter do
     context 'with groups' do
       let(:result) do
         res = SimpleCov::Result.new({
-                                source_fixture('sample.rb') => { 'lines' => [
-                                  nil, 1, 1, 1, 1, nil, nil, 1, 1, nil, nil,
-                                  1, 1, 0, nil, 1, nil, nil, nil, nil, 1, 0, nil, nil, nil
-                                ] }
-                              })
+                                      source_fixture('sample.rb') => { 'lines' => [
+                                        nil, 1, 1, 1, 1, nil, nil, 1, 1, nil, nil,
+                                        1, 1, 0, nil, 1, nil, nil, nil, nil, 1, 0, nil, nil, nil
+                                      ] }
+                                    })
 
         # right now SimpleCov works mostly on global state, hence setting the groups that way
         # would be global state --> Mocking is better here
-        allow(res).to receive_messages(groups: {"My Group" => double("File List", covered_percent: 80.0)})
+        allow(res).to receive_messages(groups: { 'My Group' => double('File List', covered_percent: 80.0) })
         res
       end
 
