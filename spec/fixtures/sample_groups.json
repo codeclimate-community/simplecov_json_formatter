@@ -33,5 +33,11 @@
       ]
     }
   },
-  "groups": {}
+  "groups": {
+    "My Group": {
+      "lines": {
+        "covered_percent": 80.0
+      }
+    }
+  }
 }

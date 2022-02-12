@@ -1,9 +1,9 @@
 {
   "meta": {
-    "simplecov_version": "0.18.5"
+    "simplecov_version": "0.21.2"
   },
   "coverage": {
-    "/gem/spec/fixtures/sample.rb": {
+    "/STUB_WORKING_DIRECTORY/spec/fixtures/sample.rb": {
       "lines": [
         null,
         1,
@@ -46,5 +46,6 @@
         }
       ]
     }
-  }
+  },
+  "groups": {}
 }
