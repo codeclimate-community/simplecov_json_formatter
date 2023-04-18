@@ -1,6 +1,6 @@
 # JSON formatter for SimpleCov
 
-***Note: To learn more about SimpleCov, check out the main repo at [https://github.com/simplecov-ruby/simplecov](https://github.com/colszowka/simplecov***)***
+***Note: To learn more about SimpleCov, check out the main repo at [SimpleCov](https://github.com/simplecov-ruby/simplecov)***
 
 Generates a formatted JSON report of your [SimpleCov](https://github.com/simplecov-ruby/simplecov) ruby code coverage results on ruby 2.4+. Originally intended to add `simplecov`'s results reading capacity to CI tools.
 
