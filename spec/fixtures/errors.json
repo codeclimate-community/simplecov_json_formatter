@@ -37,5 +37,6 @@
   "errors": {
     "less_than_minimum_coverage": {"spec/fixtures/sample.rb": 30.0}
   },
+  "total": {"covered_lines": 3, "covered_percent": 30.0, "lines_of_code": 10, "missed_lines": 7},
   "groups": {}
 }

@@ -12,6 +12,7 @@ module SimpleCovJSONFormatter
     def format
       format_files
       format_groups
+      format_total
 
       formatted_result
     end
@@ -40,6 +41,15 @@ module SimpleCovJSONFormatter
       end
     end
 
+    def format_total
+      formatted_result[:total] = {
+        covered_percent: @result.covered_percent,
+        covered_lines: @result.covered_lines,
+        missed_lines: @result.missed_lines,
+        lines_of_code: @result.total_lines
+      }
+    end
+
     def formatted_result
       @formatted_result ||= {
         meta: {
@@ -47,9 +57,8 @@ module SimpleCovJSONFormatter
         },
         coverage: {},
         groups: {},
-        errors: {
-          less_than_minimum_coverage: {}
-        }
+        errors: { less_than_minimum_coverage: {} },
+        total: {}
       }
     end
 

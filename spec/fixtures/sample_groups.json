@@ -38,6 +38,7 @@
   "errors": {
     "less_than_minimum_coverage": {}
   },
+  "total": {"covered_lines": 9, "covered_percent": 90.0, "lines_of_code": 10, "missed_lines": 1},
   "groups": {
     "My Group": {
       "lines": {
