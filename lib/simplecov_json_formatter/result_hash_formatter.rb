@@ -6,6 +6,7 @@ module SimpleCovJSONFormatter
   class ResultHashFormatter
     def initialize(result)
       @result = result
+      @parent_path = "#{Dir.pwd}/"
     end
 
     def format
@@ -68,7 +69,8 @@ module SimpleCovJSONFormatter
       return nil unless config[:minimum_coverage_by_file]
       return nil unless formatted_file[:percent] < config[:minimum_coverage_by_file]
 
-      formatted_result[:errors][:less_than_minimum_coverage][source_file.filename] = formatted_file[:percent]
+      file_name = source_file.filename.delete_prefix(@parent_path)
+      formatted_result[:errors][:less_than_minimum_coverage][file_name] = formatted_file[:percent]
     end
   end
 end

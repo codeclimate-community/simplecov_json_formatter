@@ -35,7 +35,7 @@
     }
   },
   "errors": {
-    "less_than_minimum_coverage": {"/Users/lockstep/Documents/Projects/simplecov-reporter/simplecov_json_formatter/spec/fixtures/sample.rb": 30.0}
+    "less_than_minimum_coverage": {"spec/fixtures/sample.rb": 30.0}
   },
   "groups": {}
 }
