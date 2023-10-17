@@ -14,7 +14,6 @@ Gem::Specification.new 'simplecov_json_formatter' do |s|
   s.license = 'MIT'
 
   s.files         = Dir['{lib}/**/*.*', '*.md']
-  s.test_files    = Dir['{test}/**/*.*']
   s.require_paths = ['lib']
 
   s.required_ruby_version = '>= 2.4.0'
