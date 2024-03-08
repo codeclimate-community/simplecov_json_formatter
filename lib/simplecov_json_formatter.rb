@@ -28,10 +28,8 @@ module SimpleCov
       end
 
       def output_message(result)
-        %W[
-          JSON Coverage report generated for #{result.command_name} to #{SimpleCov.coverage_path}.
-          #{result.covered_lines} / #{result.total_lines} LOC (#{result.covered_percent.round(2)}%) covered.
-        ].join(' ')
+        "JSON Coverage report generated for #{result.command_name} to #{SimpleCov.coverage_path}. " \
+        "#{result.covered_lines} / #{result.total_lines} LOC (#{result.covered_percent.round(2)}%) covered."
       end
     end
   end
