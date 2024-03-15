@@ -1,20 +1,20 @@
 {
   "meta": {
     "simplecov_version": "0.21.2",
-    "config": { "minimum_coverage": null, "minimum_coverage_by_file": null }
+    "config": { "minimum_coverage": 80, "minimum_coverage_by_file": 80 }
   },
   "coverage": {
     "/STUB_WORKING_DIRECTORY/spec/fixtures/sample.rb": {
       "lines": [
         null,
-        1,
-        1,
-        1,
-        1,
+        0,
+        0,
+        0,
+        0,
         null,
         null,
-        1,
-        1,
+        0,
+        0,
         null,
         null,
         1,
@@ -31,12 +31,12 @@
         "ignored",
         "ignored",
         null
-      ], "percent": 90.0
+      ], "percent": 30.0
     }
   },
   "errors": {
-    "less_than_minimum_coverage": {}
+    "less_than_minimum_coverage": {"spec/fixtures/sample.rb": 30.0}
   },
-  "total": {"covered_lines": 9, "covered_percent": 90.0, "lines_of_code": 10, "missed_lines": 1},
+  "total": {"covered_lines": 3, "covered_percent": 30.0, "lines_of_code": 10, "missed_lines": 7},
   "groups": {}
 }

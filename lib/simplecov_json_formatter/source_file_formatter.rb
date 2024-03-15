@@ -19,7 +19,8 @@ module SimpleCovJSONFormatter
 
     def line_coverage
       @line_coverage ||= {
-        lines: lines
+        lines: lines,
+        percent: percent
       }
     end
 
@@ -45,6 +46,10 @@ module SimpleCovJSONFormatter
       end
 
       branches
+    end
+
+    def percent
+      @source_file.covered_percent
     end
 
     def parse_line(line)
